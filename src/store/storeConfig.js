@@ -4,7 +4,13 @@ const reducers = combineReducers({
     numeros: function(state, action) {
         return {
             min: 5,
-            max: 35
+            max: 50
         }
     }
 })
+
+function storeConfig() {
+    return createStore(reducers)
+}
+
+export default storeConfig
